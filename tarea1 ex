@@ -1,0 +1,823 @@
+//Ejercicios algoritmos secuenciales (paso a paso):
+// 11. Suma de dos números: Escribe un programa que tome dos números como
+// entrada y muestre su suma.
+// BOSQUEJO DEL PROBLEMA:
+// entrada: Datos del problema:VARIABLES:
+// num1=0?(LEIDA), num2=0?(LEIDA), res=0?(CALCULADA)
+// proceso: Calculo con esos datos : res= num1 + num2
+// salida:  Mostrar el resultado de esos datos: res
+Funcion sumaNumeros
+	// entrada de datos
+    Definir n1,n2,res Como Real;
+	num1=0;num2=0;res=0;
+	Escribir "Ingrese el primer numero ";
+	Leer num1;
+	Escribir "Ingrese el segundo numero ";
+	Leer  num2;
+	// Proceso de datos
+	res= num1 + num2; 
+	// Salida de datos 
+	Escribir num1,"+",num2,"=",res;
+FinFuncion
+
+// 12. Área de un triángulo: Pide al usuario que ingrese la base y la altura de un triángulo,
+// luego calcula y muestra su área.
+// BOSQUEJO DEL PROBLEMA:
+// entrada: Datos del problema:VARIABLES:
+// base=0?(LEIDA), altura=0?(LEIDA), area=0?(CALCULADA)
+// proceso: Calculo con esos datos : area= base * altura /2
+// salida:  Mostrar el resultado de esos datos: area 
+Funcion areaTriangulo
+	// entrada de datos
+	Definir altura,base,area Como real
+	base=0;altura=0;area=0
+	Escribir "ingrese la base del triangulo"
+	Leer base
+	escribir "ingrese la altura del triangulo"
+	leer altura
+	// Proceso de datos
+	area = base * altura / 2
+	// Salida de datos
+	Escribir "el area del triangulo es:",area
+FinFuncion
+
+//13. Número par o impar: Solicita al usuario que ingrese un número e indica si es
+//par o impar.
+// BOSQUEJO DEL PROBLEMA:
+// entrada: Datos del problema:VARIABLES:
+// num=0?(LEIDA) 
+// proceso: Calculo con esos datos : 
+// SI num/2=0  Entonces
+// Escribir"este numero es par "
+//SiNo
+// Escribir"este numero es impar "
+// salida:  Mostrar el resultado de esos datos:num
+Funcion paroimpar
+	// entrada de datos
+	Definir  num Como Entero
+	num=0
+	Escribir "ingrese un numero"
+	leer num
+	// Proceso de datos
+	Si num mod 2=0 Entonces
+		// Salida de datos
+		Escribir "el numero ", num " es par"
+	SiNo
+		escribir "el numero ", num " es impar"
+	Fin Si
+FinFuncion
+
+//14. Calculadora simple: Crea una calculadora que realice operaciones básicas
+//como suma, resta, multiplicación y división, según la elección del usuario.
+// BOSQUEJO DEL PROBLEMA:
+// Entrada: Datos del problema:	VARIABLES
+//num1=0?(leer),num2=0?(leer),operacion=''?(leer) resultado=0?(calculada)
+// Proceso: Calculo con esos datos
+//Si operacion=´+´
+//  resultado=num1+num2
+//Escribir resultado
+//SiNo
+//Si operacion=´-´
+//  resultado=num1-num2
+//Escribir resultado
+//SiNo
+//Si operacion=´*´
+//  resultado=num1*num2
+//Escribir resultado
+//SiNo
+//Si operacion=´/´
+//  resultado=num1/num2
+//Escribir resultado
+//SiNo
+//ESCRIBIR"los valores no son correctos"
+//FINSI
+//Salida:  Mostrar el resultado de esos datos:resultado
+Funcion calculadora
+	// entrada de datos
+	Definir num1,num2,resultado Como real
+	Definir operacion Como Caracter
+	num1=0;num2=0;resultado=0;operacion=""
+	Escribir "ingrese la operacion a realizar:(+,-,*,/):"
+	leer operacion
+	Escribir "ingrese el primer numero: "
+	Leer num1
+	Escribir "ingrese el segundo numero"
+	leer num2
+	// Proceso de datos
+	Si operacion="+" Entonces
+		resultado=num1+num2
+		// Salida de datos
+		Escribir resultado
+	SiNo
+		Si operacion="-" Entonces
+			resultado=num1-num2
+			// Salida de datos
+			Escribir resultado
+		SiNo
+			Si operacion="*" Entonces
+				resultado=num1*num2
+				// Salida de datos
+				Escribir resultado
+			SiNo
+				Si  operacion="/" Entonces
+					resultado=num1/num2
+					// Salida de datos
+					Escribir resultado
+				SiNo
+					// Salida de datos
+					Escribir "los valores no son correctos"
+				Fin Si
+			Fin Si
+		Fin Si
+	Fin Si
+FinFuncion
+
+//15.Tabla de multiplicar: Pide al usuario un número y muestra su tabla de
+//multiplicar del 1 al 10.
+// BOSQUEJO DEL PROBLEMA:
+// Entrada: Datos del problema:VARIABLES:
+// num=0?(leida) ; res=0?(calculada)
+//Proceso: Calculo con esos datos:
+//res=num*1
+//Escribir res
+//res=num*2
+//Escribir res
+//res=num*3
+//Escribir res
+// y haci sucesivamente....hasta el 10.
+//Escribir res
+//Salida:  Mostrar el resultado de esos datos:res
+funcion tablaDeMultiplicar
+	// entrada de datos
+	Definir num,res Como Entero
+	num=0;res=0
+	Escribir "ingrese el numero que desea multiplicar "
+	Leer num
+	// Proceso de datos
+	res=num*1
+	// Salida de datos
+	Escribir num,"X","1","=",res 
+	res=num*2
+	// Salida de datos
+	Escribir num,"X","2","=",res 
+	res=num*3
+	// Salida de datos
+	Escribir num,"X","3","=",res 
+	res=num*4
+	// Salida de datos
+	Escribir num,"X","4","=",res 
+	res=num*5
+	// Salida de datos
+	Escribir num,"X","5","=",res 
+	res=num*6
+	// Salida de datos
+	Escribir num,"X","6","=",res 
+	res=num*7
+	// Salida de datos
+	Escribir num,"X","7","=",res 
+	res=num*8
+	// Salida de datos
+	Escribir num,"X","8","=",res 
+	res=num*9
+	// Salida de datos
+	Escribir num,"X","9","=",res 
+	res=num*10
+	// Salida de datos
+	Escribir num,"X","10","=",res 
+FinFuncion
+
+//16. Copiar palabra: Escribe un programa que lea dos palabras y concatena en otra
+//variable las dos palabras
+// BOSQUEJO DEL PROBLEMA:
+// Entrada: Datos del problema:VARIABLES:
+// palabra1=""?(leida),palabra2=""?(leida),palabranueva=""?(concatenada)
+//Proceso: Calculo con esos datos:
+//palabranueva=palabra1 + palabra2 
+//salida:  Mostrar el resultado de esos datos:palabranueva
+Funcion concatenarPalabra
+	// entrada de datos
+	Definir palabra1,palabra2,palabranueva Como Caracter
+	palabra1="";palabra2="";palabranueva=""
+	Escribir "ingrese la primera palabra"
+	leer palabra1
+	Escribir "ingrese la segunda palabra"
+	leer palabra2
+	// Proceso de datos
+	palabranueva=palabra1+" "+palabra2
+	// Salida de datos
+	Escribir palabranueva 
+FinFuncion
+
+//17. Mayor de tres números: Solicita tres números y determina cuál es el mayor de ellos.
+// BOSQUEJO DEL PROBLEMA:
+// Entrada: Datos del problema:VARIABLES:
+// num1=0?(leida),num2=0?(leida),num3=0?(leida),Mayor=0?(calculada) 
+//Proceso: Calculo con esos datos:
+//Si num1>num2 y num1>num3 Entonces
+//salida:  Mostrar el resultado de esos datos:
+//  Escribir num1," es el numero mayor"
+//SiNo
+//Si num2>num1 y num2>num3 Entonces
+//salida:  Mostrar el resultado de esos datos:
+//	Escribir num2," es el numero mayor"
+//SiNo
+//Si num3>num1 y num3>num2 Entonces
+//salida:  Mostrar el resultado de esos datos:
+// Escribir num3," es el numero mayor"
+//salida:  Mostrar el resultado de esos datos:
+// Proceso de datos
+Funcion numeroMayor
+	// entrada de datos
+	Definir num1,num2,num3 Como Entero
+	num1=0;num2=0;num3=0
+	Escribir "ingrese el primer numero"
+	Leer num1
+	Escribir "ingrese el segundo numero"
+	Leer num2
+	Escribir "ingrese el tercer numero"
+	Leer num3
+	// Proceso de datos
+	Si num1>num2 y num1>num3 Entonces
+		// Salida de datos
+		Escribir num1," es el numero mayor"
+	SiNo
+		// Proceso de datos
+		Si num2>num1 y num2>num3 Entonces
+			// Salida de datos
+			Escribir num2," es el numero mayor"
+		SiNo
+			// Proceso de datos
+			Si num3>num1 y num3>num2 Entonces
+				// Salida de datos
+				Escribir num3," es el numero mayor"
+				
+			FinSi
+		FinSi
+	Fin Si
+FinFuncion
+
+//18. Edad mínima para votar: Pregunta la edad del usuario y verifica si es elegible
+//para votar (18 años o más)
+// BOSQUEJO DEL PROBLEMA:
+// Entrada: Datos del problema:VARIABLES:
+// edad=0?(leida),resultado=0?(calculada)
+//Proceso: Calculo con esos datos:
+//resultado=edad>=18  Entonces
+//Escribir " Usted es elegible para votar"
+//SiNo
+//Escribir" Usted no es elegible para votar"
+//salida:  Mostrar el resultado de esos datos:resultado
+// Entrada de datos
+Funcion edadMinimaParaVotar
+	Definir edad,resultado Como Entero
+	edad=0;resultado=0
+Escribir "¿Cuntos años tiene?"
+Leer edad
+// Proceso de datos
+Si edad >=18  Entonces
+	// Salida de datos
+	Escribir " Usted es elegible para votar"
+SiNo
+	// Salida de datos
+	Escribir" Usted no es elegible para votar"
+Fin Si
+FinFuncion
+
+//19. Calculadora de BMI: Crea un programa que calcule el índice de masa corporal
+//(BMI) a partir del peso y la altura del usuario, y luego indique si está en una
+//categoría de peso saludable.
+// BOSQUEJO DEL PROBLEMA:
+// Entrada: Datos del problema:VARIABLES:
+// altura=0?(leida),peso=0?(leida),imc=0?(calculada)
+//Proceso: Calculo con esos datos:
+//imc=peso/(altura*altura)
+//Si (imc <18.5) Entonces
+//Escribir "Peso inferior al normal "
+//SiNo
+//si (imc >=18.5 y imc  <=24.9) Entonces
+//Escribir "Peso normal"
+//SiNo
+//Si (imc >=25.0 y imc <=30) Entonces
+//Escribir "Peso superior al normal"
+//SiNo
+//Escribir "Obesidad"
+//Salida:  Mostrar el resultado de esos datos:imc
+// Entrada de datos
+Funcion masaCorporal
+	Definir altura,peso,imc Como real
+	altura=0;peso=0;imc=0
+	Escribir "¿Cual es su altura en mts?"
+	Leer altura
+	Escribir "¿Cual es su peso en kg?"
+	Leer peso
+	// Proceso de datos
+	imc= peso/(altura*altura)  
+	// Salida de datos
+	Escribir "Su indice de masa corporal es:", imc
+	Si (imc <18.5) Entonces
+		// Salida de datos
+		Escribir "Peso inferior al normal "
+	SiNo
+		si (imc >= 18.5 y imc  <=24.9) Entonces
+			// Salida de datos
+			Escribir "Peso normal"
+		SiNo
+			Si (imc>=25.0 y imc<=30) Entonces
+				// Salida de datos
+				Escribir "Peso superior al normal"
+			SiNo
+				// Salida de datos
+				Escribir "Obesidad"
+			FinSi
+		FinSi
+		Fin Si
+FinFuncion
+
+//20. Número positivo, negativo o cero: Pide al usuario que ingrese un número y
+//muestra si es positivo, negativo o cero.
+// BOSQUEJO DEL PROBLEMA:
+// Entrada: Datos del problema:VARIABLES:
+// num=0?(leida),positivo=0?(calculada),negativo=0?(calculada),cero=0?(calculada) 
+//Proceso: Calculo con esos datos:
+//Si num>0  Entonces
+//Salida:  Mostrar el resultado de esos datos:
+//  Escribir "este numero es positivo"
+//SiNo
+//Si num <=-1 Entonces
+//Salida:  Mostrar el resultado de esos datos:
+//	Escribir "Este numero es negativo"
+//SiNo
+//Salida:  Mostrar el resultado de esos datos:
+// Escribir "este numero es cero"
+//Salida:  Mostrar el resultado de esos datos: SI CUMPLE LOS CONDICIONES num= positivo,negativo,cero
+// Entrada de datos
+Funcion positivo_negativo_cero
+	Definir num,posi,nega,cer0 Como Entero
+	num=0;posi=0;nega=0;cer0=0
+	Escribir "Ingrese un numero"
+	Leer num
+	// Proceso de datos
+	Si num >0 Entonces
+		Escribir "Este numero es positivo"
+	SiNo
+		// Proceso de datos
+		si num <=-1 Entonces
+			// Salida de datos
+			Escribir "Este numero es negativo"
+		SiNo
+			// Salida de datos
+			Escribir "Este numero es cero"
+		FinSi
+	Fin Si
+FinFuncion
+
+//21. Año bisiesto: Solicita al usuario un año y determina si es un año bisiesto o no.
+//Un año bisiesto es divisible por 4, pero no por 100, a menos que también sea
+//divisible por 400.
+// BOSQUEJO DEL PROBLEMA:
+// Entrada: Datos del problema:VARIABLES:
+// año=0?(leida) 
+//Proceso: Calculo con esos datos:
+//Si año mod 4=0 y año mod 100<>0 o año mod 400=0 Entonces
+//Salida:  Mostrar el resultado de esos datos:
+//Escribir año " Este año es bisiesto"
+//SiNo 
+//Salida:  Mostrar el resultado de esos datos:
+//escribir año " Este año no es bisiesto"
+//Fin Si
+//Salida:  Mostrar el resultado de esos datos:
+// Entrada de datos
+Funcion añoBisiesto
+	Definir año Como Entero
+	año=0
+	Escribir "Ingrese el año"
+	Leer año
+	// Proceso de datos
+	Si año mod 4=0 y año mod 100<>0 o año mod 400=0 Entonces
+		// Salida de datos
+		Escribir año " Este año es bisiesto"
+	SiNo 	// Salida de datos
+		escribir año " Este año no es bisiesto"
+	Fin Si
+FinFuncion
+
+
+
+//23. Día del mes con respecto a la segunda quincena: Solicita al usuario que ingrese
+//un número de día del mes (por ejemplo, del 1 al 31) y verifica si ese día
+//pertenece a la primera quincena (días 1-15) o a la segunda quincena (días 16-31).
+// BOSQUEJO DEL PROBLEMA:
+// Entrada: Datos del problema:VARIABLES:
+// dia=0?(leida) 
+//Proceso: Calculo con esos datos:
+//Si dia<=15 Entonces
+//Salida:  Mostrar el resultado de esos datos:
+//Escribir año " Este dia pertenece a la primera quincena"
+//SiNo 
+//Salida:  Mostrar el resultado de esos datos:
+//escribir año " Este dia pertenece a la segunda quincena"
+//Fin Si
+//Salida:  Mostrar el resultado de esos datos:
+// Entrada de datos
+Funcion quincena 
+	Definir dia Como Entero
+	dia=0
+	Escribir "Ingresar numero "
+	leer dia
+	// Proceso de datos
+	si dia <=15 Entonces
+		Escribir  "Este dia pertenece a la primera quincena"
+	SiNo
+		// Proceso de datos
+		si dia >15 y dia <=31 Entonces
+			// Salida de datos
+			Escribir "Este dia pertenece a la segunda quincena"
+		SiNo
+			// Salida de datos
+			Escribir "Este numero no pertenece a ningun Mes,por ende a ninguna quincena"
+			
+		FinSi
+		
+	FinSi
+FinFuncion
+
+
+//24. Día de la semana: Pide al usuario que ingrese un número del 1 al 7, donde 1
+//representa el domingo, 2 el lunes, 3 el martes, y así sucesivamente. Luego,
+//utiliza una estructura switch para mostrar el nombre del día de la semana
+//correspondiente al número ingresado.
+// BOSQUEJO DEL PROBLEMA:
+// Entrada: Datos del problema:VARIABLES:
+// dia=0?(leida) 
+//Proceso: Calculo con esos datos:
+//estructura de swicht,segun la eleccion del usuario sera asignada su valor.
+//salida:  Mostrar el resultado de esos datos:
+Funcion diaDeLaSemana
+	definir dia Como Entero
+	dia=0
+	Escribir "ingrese su numero"
+	Leer dia
+	Segun dia Hacer
+	    1:
+			Escribir "Domingo"
+		2:
+			Escribir "Lunes"
+		3:
+			Escribir "Martes"
+		4:
+			Escribir "Miercoles"
+		5:
+			Escribir "Jueves"
+		6:
+			Escribir "Viernes"
+		7: 
+			escribir "Sabado"
+		De Otro Modo:
+			Escribir"Numero incorrecto"
+	Fin Segun
+FinFuncion
+
+//25. Frases iguales: Escribir un programa que ingrese dos frases e indique si son
+//iguales
+// BOSQUEJO DEL PROBLEMA:
+// Entrada: Datos del problema:VARIABLES:
+// frase1=""?(leida),frase2=""?(leida)
+//Proceso: Calculo con esos datos:
+//si frase1=frase2    EntonceS
+//salida:  Mostrar el resultado de esos datos:
+//Escribir "LAS FRASES SON IGUALES"
+// SiNo
+//salida:  Mostrar el resultado de esos datos:
+// Escribir"LAS FRASES NO SON IGUALES"
+//salida:  Mostrar el resultado de esos datos:
+Funcion frasesIguales
+	Definir frase1,frase2 Como Caracter
+	Escribir "ingrese la primera frase"
+	Leer frase1
+	Escribir "ingrese la segunda frase"
+	Leer frase2
+	Si frase1=frase2 Entonces
+		Escribir "las frases son iguales"
+	SiNo
+		Escribir "las frases son diferentes"
+	Fin Si
+FinFuncion
+
+//26. Calculadora de precio con descuento: Crea un programa que permita a un
+//usuario ingresar el precio de un artículo y un porcentaje de descuento. El
+//programa debe calcular y mostrar el precio final después del descuento.
+// BOSQUEJO DEL PROBLEMA:
+// Entrada: Datos del problema:VARIABLES:
+//precio=0,0?(leida),pordescuento=0,0?(leida),descuento=0,0?(calculada),preciofinal=0,0?(calculada) 
+//Proceso: Calculo con esos datos:
+//el pordescuento lo dividimos sobre 100 para hacerlo tipo decimal
+//luego descuento sera= precio * pordescuento
+//luego preciofinal sera= precio - descuento
+//salida:  Mostrar el resultado de esos datos:preciofinal
+Funcion calculadoraDescuento
+	Definir precio,pordescuento,descuento,preciofinal Como real
+	precio=0.0;pordescuento=0.0;descuento=0.0;preciofinal=0.0
+	Escribir "ingrese el precio del articulo"
+	Leer precio
+	Escribir "ingrese el porcentaje de descuento"
+	leer pordescuento
+	pordescuento=pordescuento/100
+	descuento= precio*pordescuento
+	preciofinal=precio-descuento
+	Escribir "El precio del articulo con su descuento de ",pordescuento*100,"% es:",preciofinal
+FinFuncion
+
+//27. Calculadora de factura con impuestos: Solicita al usuario que ingrese el total
+//de una factura y el porcentaje de impuestos aplicado. Luego, calcula y muestra
+//el monto total a pagar, incluyendo los impuestos.
+// BOSQUEJO DEL PROBLEMA:
+// Entrada: Datos del problema:VARIABLES:
+//totalfac=0,0?(leida),porcimp=0,0,(leida),imp=0,0?(calculada),totalimp=0,0?(calculada) 
+//Proceso: Calculo con esos datos:
+// el porcimp lo dividimos sobre 100 para hacerlo tipo decimal
+//luego calculamos el impuesto esto sera imp= totalfac * porcimp
+//luego calculamos el precio con impuestos y esto sera totalimp= totalfac + imp 
+//salida:  Mostrar el resultado de esos datos: totalimp
+Funcion totalYporcentajeImpuesto
+	Definir totalfac,porcimp,imp,totalimp Como Real
+	totalfac=0.0;porcimp=0.0;imp=0.0;totalimp=0.0
+	Escribir "ingerese el total de su factura:"
+	leer totalfac
+	Escribir "ingrese su porcentaje de impuesto aplicado:"
+	Leer porcimp
+	porcimp=porcimp/100
+	imp=totalfac*porcimp
+	totalimp=totalfac+imp
+	Escribir "Su monto a pagar incluyendo impuestos es:" totalimp
+FinFuncion
+
+//28. Calculadora de sueldo con aumento: Pide al usuario que ingrese su salario
+//actual y el porcentaje de aumento que recibirá. Calcula y muestra el nuevo
+//salario después del aumento.
+// BOSQUEJO DEL PROBLEMA:
+// Entrada: Datos del problema:VARIABLES:
+// salario=0,0?(leida),porc=0,0?(leida),aumento=0,0(calculada),nuevosal=0,0(calculada)
+//Proceso: Calculo con esos datos:
+// el porcentaje de aumento (porc)= lo divimos para 100 para hacerlo tipo decimal
+//  luego calculamos el aumento y esto sera aumento= salario * porc
+//luego calculamos el nuevo salario y esto sera nuevosal= salario + aumento
+//Salida:  Mostrar el resultado de esos datos: nuevosal
+Funcion  aumentosalario
+	Definir salario,porc,aumento,nuevosal Como Real
+	salario=0.0;porc=0.0;aumento=0.0;nuevosal=0.0
+	Escribir "ingrese su salario actual "
+	Leer salario
+	Escribir "ingrese su porcentaje de aumento "
+	Leer porc
+	porc=porc/100
+	aumento=salario*porc
+	nuevosal=salario+aumento
+	Escribir "Su nuevo salario es: ",nuevosal
+FinFuncion
+
+//29. Calculadora de compra con múltiples artículos: Permite al usuario ingresar el
+//precio y la cantidad de varios artículos que está comprando. Calcula el total de
+//la compra y aplica un descuento del 10% si el total es mayor a cierta cantidad
+//(por ejemplo, $100)
+// BOSQUEJO DEL PROBLEMA:
+// Entrada: Datos del problema:VARIABLES:
+// precio=0.0?(leida),cantidad=0?(leida),total=0.0(precio*cantidad),porcdes=0.10(asignado),descuento=0.0(total*porcdes)
+//Proceso: Calculo con esos datos:
+//total=precio*cantidad
+// si total > 100: descuento=precio*porcdes
+//Salida:  Mostrar el resultado de esos datos:total,descuento,total-descuento
+Funcion compraYdescuento
+	Definir precio,total,porcdes,descuento como real
+	Definir cantidad Como Entero
+	precio=0.0;cantidad=0;total=0.0;porcdes=0.10;descuento=0.0
+	Escribir "ingrese el precio"
+	leer precio
+	Escribir "ingrese la cantidad de articulos"
+	leer cantidad
+	total=precio*cantidad
+	Si total>100 Entonces
+		descuento=total*porcdes
+	Fin Si
+	Escribir "el subtotal es: ",total
+	Escribir "su descuento es de: ",descuento
+	Escribir "el total de su compra es ",total-descuento
+FinFuncion
+
+//30,31,32. Calculadora de impuestos sobre el salario: Solicita al usuario que ingrese su
+//salario anual y calcula el impuesto sobre la renta según las siguientes tasas: 
+// Hasta 10.000 : 5%
+// De 10.001 a 20.000 : 10%
+// Mas de 20.000 : 15%
+// BOSQUEJO DEL PROBLEMA:
+// Entrada: Datos del problema:VARIABLES:
+// salarioa=(0.0),imp=(0.0),porimp=(asig),salarioimp=(0.0)
+// Proceso: 
+// Preguntamos su salario anual y luego lo leemos en la variable (salarioa)
+//aqui condicionamos 
+//si (salarioa)<=10.000 : porimp=0.05
+//sino si (salarioa)>=10.001 y salario<=20.000  : porimp=0.10
+// sino si (salarioa)>20.000  : porimp=0.15
+// Hacemos los calculos:
+//imp=salarioa*porimp
+// Salida:
+// Mostramos los resultados:imp 
+Funcion impuestosSalarioAnual
+	Definir salarioa,imp,porimp Como Real
+	salarioa=0.0;imp=0.0;porimp=0.0
+	Escribir "¿Cual es su salario Anual?"
+	Leer salarioa
+	Si salarioa<=10000 Entonces
+		porimp=0.05
+	SiNo
+		Si salarioa>=10001 y salarioa<=20000 Entonces
+			porimp=0.10
+		SiNo
+			Si salarioa>20000 Entonces
+				porimp=0.15
+			Fin Si
+		Fin Si
+	Fin Si
+	imp=salarioa*porimp
+	Escribir "el impuesto sobre la renta según sus tasas es de:",imp
+FinFuncion
+
+//33. Descuento por antigüedad en la empresa: Pregunta al usuario cuántos años ha
+//estado trabajando en una empresa y calcula su bono de antigüedad. Si ha
+//trabajado más de 5 años, otorga un bono del 5% sobre su salario.
+// BOSQUEJO DEL PROBLEMA:
+// Entrada: Datos del problema:VARIABLES:
+// salario=(0.0),años=(0),porcbono=(0.0)bono=(0.0)
+//Proceso:
+// preguntamos cuantos años ha estado trabajando en la empresa, leemos en la variable(años)
+//preguntamos cuanto es su salario, leemos en la variable (salario)
+// aqui Condicionamos 
+// si (años)>5 : porcbono=0.05
+//bono=salario*porcbono
+// sino escribimos "usted no cumple los requisitos para el bono"
+// Salida:
+//Se mostrara de acuerdo a sus condiciones
+Funcion añosBono
+	Definir años Como Entero
+	Definir salario,porcbono,bono Como real 
+	años=0;salario=0.0;porcbono=0.0;bono=0.0
+	Escribir "¿Cuantos años a estado trabajando en la empresa?"
+	Leer años
+	Escribir "¿Cual es su salario?"
+	Leer salario
+	Si años>5 Entonces
+		porcbono=0.05
+		bono=salario*porcbono
+		Escribir "Felicidades se te ha otorgado un bono de 5% sobre su salario!"
+		Escribir "Su bono de 5% es= ",bono
+		Escribir "Su salario mas su bono es de= ",salario+bono
+	SiNo
+		Escribir "Usted no cumple los requisitos para el bono!"
+	Fin Si
+FinFuncion
+
+
+//34. Calculadora de envío con tarifas diferentes: Crea un programa que permita al
+//usuario ingresar la distancia de envío y calcule el costo del envío. Si la distancia
+//es inferior a 50 km, el costo es de $10. Si la distancia es de 50 km o más, el costo es de $20.
+// BOSQUEJO DEL PROBLEMA:
+// Entrada: Datos del problema:VARIABLES:
+// distancia=0,0(leida),costo=0(asignado) 
+//Proceso: Calculo con esos datos:
+// si distancia es inferior a 50 km,el costo sera de $10,lo podemos plantear de esta manera: distancia>50:costo $10
+// pero si la distancia es igual o mayor a 50 km, el costo sera de 20,lo podemos plantear de esta manera:distancia<50:costo $20
+//Salida:  Mostrar el resultado de esos datos:costo
+Funcion tarifas
+	Definir distancia,costo como real
+	distancia=0.0;costo=20
+	Escribir "Ingrese la distancia de envio "
+	Leer distancia 
+	Si distancia<50 Entonces
+		costo=10
+	Fin Si
+	Escribir"Su costo de envio es de:$",costo
+FinFuncion
+
+//35. Calculadora de descuento por lealtad del cliente: Pide al usuario que ingrese el
+//total de sus compras mensuales durante un año. Si el total es superior a $500,
+//aplica un descuento del 10% en la próxima compra.
+// BOSQUEJO DEL PROBLEMA:
+// Entrada: Datos del problema:VARIABLES:
+// totalanual=0.0?(leida),descuento=0.10(asignado)
+// Proceso: Calculo con esos datos:
+// sitotalanual>500:aplica un descuento de 10% a la proxima compra
+//Salida:  Mostrar el resultado de esos datos: descuentos
+Funcion DescuentoLealtad
+	Definir totalanual,descuento Como Real
+	totalanual=0.0;descuento=0.10
+	Escribir "ingrese el total de sus compras mensuales durante un año"
+	Leer totalanual
+	Si totalanual>500 Entonces
+		descuento= 0.10*100
+		Escribir "Usted aplica para un descuento de ",descuento,"% para su proxima compra "
+	Fin Si
+FinFuncion
+
+//36,37,38,39. Calculadora de descuento por volumen de compra: Permite al usuario ingresar
+//la cantidad de unidades de un producto que va a comprar y el precio unitario.
+//Aplica descuentos por volumen de compra según las siguientes reglas:
+// 10-50 unidades: 5% de descuento.
+// 51-100 unidades: 10% de descuento.
+// Más de 100 unidades: 15% de descuento.
+
+// BOSQUEJO DEL PROBLEMA:
+// Entrada: Datos del problema:VARIABLES:
+//cantidad=0.0?(leida),preciouni=0.0?(leida),total=0.0(calculada),descuento(calculada)
+//Proceso: Calculo con esos datos:
+//calculamos el total de la compra y esto sera total=cantidad*preciouni
+//luego aplicamos los descuentos de acuerdo a las reglas
+//Si cantidad>=10 y cantidad<=50:descuento=total*0.05
+//cantidad>=51 y cantidad<=100:descuento=total*0.10
+//Si cantidad>100:descuento=total*0.15
+//Salida:  Mostrar el resultado de esos datos:total,descuento,total-descuento
+
+Funcion volumenDeCompra
+	definir cantidad,preciouni,total,descuento Como Real
+	cantidad=0.0;preciouni=0.0;total=0.0;descuento=0.0
+	Escribir "ingrese la cantidad de unidades"
+	leer cantidad
+	Escribir "ingrese el precio unitario"
+	leer preciouni
+	total=cantidad*preciouni
+	Si cantidad>=10 y cantidad<=50  Entonces
+		descuento=total*0.05
+	SiNo
+		Si cantidad>=51 y cantidad<=100 Entonces
+			descuento=total*0.10
+		SiNo
+			Si cantidad>100 Entonces
+				descuento=total*0.15
+			Fin Si
+		Fin Si
+	Fin Si
+	Escribir"el subtotal es:", total
+	Escribir "su descuento es:", descuento
+	Escribir "el total de su compra es:",total-descuento
+FinFuncion
+
+//40. Calculadora de costo de servicio: Pregunta al usuario cuántas horas de servicio
+//necesita y calcula el costo total. Si las horas son más de 10, aplica un descuento del 20%. 
+// BOSQUEJO DEL PROBLEMA:
+// Entrada: Datos del problema:VARIABLES:
+// horas=0(leida),costo=0.0(leida),subtotal=0.0(calculada),desc=0.0(calculada),porcent=0.0(asiganada),total=0.0(calculada)
+// Proceso:
+// preguntamos cuantas horas necesita y el costo, luego lo leemos. 
+// Condicionamos si (horas) es mayor a 10 : porcent=0.20
+// Hacemos los calculos:
+//subtotal=horas*costo
+//desc=subtotal*porcent
+//total=subtotal-desc
+// Salida:
+// mostramos los calculos: subtotal,desc,total 
+Funcion costoServicio
+	Definir horas Como Entero
+	definir costo,subtotal,desc,porcent,total como real
+	horas=0;costo=0.0;subtotal=0.0;desc=0.0;porcent=0.0;total=0.0
+	Escribir "¿cuantas horas de servicio necesita?"
+	leer horas
+	Escribir "¿cual es el costo?"
+	leer costo
+	Si horas>10 Entonces
+		porcent=0.20
+	Fin Si
+	subtotal=horas*costo
+	desc=subtotal*porcent
+	total=subtotal-desc
+	Escribir "el subtotal es:",subtotal
+	Escribir "el descuento es:",desc
+	Escribir "el total es:",total
+FinFuncion
+
+
+
+Algoritmo Tarea1
+	//sumaNumeros
+	//areaTriangulo
+	//paroimpar
+	//calculadora
+	//tablaDeMultiplicar
+	//concatenarPalabra
+	//numeroMayor
+	//edadMinimaParaVotar
+	//masaCorporal
+	//positivo_negativo_cero
+	//añoBisiesto
+	//quincena 
+	//diaDeLaSemana
+	//frasesIguales
+	//calculadoraDescuento
+	//totalYporcentajeImpuesto
+	//aumentosalario
+	//compraYdescuento
+	//impuestosSalarioAnual
+	//tarifas
+	//DescuentoLealtad
+	//volumenDeCompra
+	//costoServicio
+	añosBono
+FinAlgoritmo
+
